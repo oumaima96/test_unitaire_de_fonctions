@@ -9,7 +9,7 @@ const {
     rechercheDichotomique
 }= require('./queue');
 //function init
-/* describe("test the queue initialization"  ,()=>{
+describe("test the queue initialization"  ,()=>{
     test("should return an object with empty array and an initialized capacity", ()=>{
         for(i=0;i<100; i++) {
             let expected={
@@ -204,7 +204,7 @@ describe("test remove the first element in the queue"  ,()=>{
         expect(removeFirst(queue)).toStrictEqual(expected)
     })
 })
-*/
+
 // function recherche dichotomique
 describe("test rechercheDichotomique of an element in a list"  ,()=>{
     test("should return -1 if the list is empty", ()=>{
