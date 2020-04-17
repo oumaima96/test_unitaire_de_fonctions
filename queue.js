@@ -47,18 +47,17 @@ function rechercheDichotomique(array,element){
   if (array.length==0){
     return -1
   }
-  var m = Math.floor(array.length / 2);
-  if(array[m] == element) return m+1;
+   var m = Math.floor(array.length / 2);
+   if(array[m] == element) return m+1;
    
-  if(array.length == 1) return NaN;
+   if(array.length == 1) return NaN;
    
-  if (array[m] < element) {
-    return rechercheDichotomique(array.slice(m,array.length),element) + m;
-  }
-  else {
-    return rechercheDichotomique(array.slice(0,m),element);
+   if (array[m] < element) {
+       return rechercheDichotomique(array.slice(m,array.length),element) + m;
+   }
+   else {
+       return rechercheDichotomique(array.slice(0,m),element);
   }
 }
-array=[5,8,9,25]
-console.log(rechercheDichotomique(array,250))
+
 module.exports = {init,getCapacity,getSize,isEmpty,isFull,addLast,removeFirst,rechercheDichotomique};
